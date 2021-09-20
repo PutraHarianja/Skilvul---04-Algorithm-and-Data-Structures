@@ -1,0 +1,17 @@
+STORE "tipe" with any number
+STORE "besar" with any string
+STORE "hasil" with any value
+
+
+IF "tipe = fahrenheit" 
+    DO CALCULATE ( "besar" subtract 32 ) times (5/9)
+    SET "hasil" value with calculation result  
+ELSE IF "tipe = kelvin" 
+    DO CALCULATE "besar" subtract 275.15 
+    SET "hasil" value with calculation result  
+ELSE IF "tipe = celcius" 
+    SET "hasil" value with "besar" value
+ELSE 
+    DISPLAY "Diluar jangkauan"
+    BREAK
+DISPLAY "hasil"

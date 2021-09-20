@@ -1,0 +1,17 @@
+STORE "text" with string
+STORE "length" with "text" length
+STORE "first" with 0
+STORE "last" with "length" - 1
+STORE "STATUS" with 1
+WHILE "first" < "last"
+    IF(string[first] = string[last])
+        ADD "first" by 1
+        REDUCE "last" by 1
+    ELSE
+        SET STATUS with 0
+
+IF "STATUS" = 1
+    DISPLAY "TRUE"
+ELSE 
+    DISPLAY "FALSE"
+

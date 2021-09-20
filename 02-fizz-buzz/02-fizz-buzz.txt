@@ -1,0 +1,16 @@
+STORE "number" with any number
+STORE "shownumber" with 0
+
+WHILE ("shownumber" != "number")
+    IF(shownumber % 3 = 0 AND shownumber % 5 = 0)
+        DISPLAY "FizzBuzz"
+        CONTINUE
+    ELSE IF (shownumber % 3 = 0)
+        DISPLAY "Fizz"
+        CONTINUE
+    ELSE IF (shownumber % 5 = 0)
+        DISPLAY "Buzz"
+        CONTINUE
+    ADD "shownumber" by 1
+
+
